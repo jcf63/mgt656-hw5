@@ -2,11 +2,11 @@ var express = require('express');
 var app = express();
 
 app.get('/', function(request, response){
-    response.send('Hello goodbye!');
+    response.send('Hello MGT-656!');
 });
 
-app.get('/perfect-octopus', function(request, response){
-    response.send('Apparently I am a perfect octopus even though I have 7 tentacles');
+app.get('/nickname', function(request, response){
+    response.send('perfect-octopus');
 });
 
 app.listen(process.env.PORT || 4000);
